@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsividade.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Chat-bot Dr.Cristina</title>
+</head>
+<body style="font-family: 'Poppins', sans-serif; background-color: #f9f9f9;">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" 
+  style="background-color: #e3f2fd; position: fixed; top: 0; width: 100%; z-index: 1030;">
+<div class="container-fluid">
+ <img src="img/DALL·E 2024-11-07 18.00.41 - Create an image of an AI character inspired by a woman with curly hair, wearing a lab coat, and having a calm, focused expression. The character has a.webp" 
+      width="80px" style="border-radius: 30px;">
+ <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+ </button>
+ <div class="collapse navbar-collapse" id="navbarNav">
+   <ul class="navbar-nav">
+     <li class="nav-item">
+       <a class="nav-link active" aria-current="page" href="#chat-bot">Lar</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="#sobre">Sobre</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="#Benefícios">Benefícios</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" aria-disabled="true" href="#feedback">Feedback</a>
+     </li>
+   </ul>
+ </div>
+</div>
+</nav>
+<section class="py-5" id="chat-bot" style="text-align: center;">
+      <div class="container d-flex flex-wrap align-items-center">
+        <div class="col-md-6 mb-3">
+          <h1 class="display-5 fw-bold text-primary">Doutora Cristina</h1>
+          <p class="lead text-muted">Sua Consultora Médica Virtual 24/7</p>
+          <p>Esclareça dúvidas médicas de forma rápida, prática e segura, com nosso chat-bot personalizado.</p>
+          <!-- Botão para abrir o modal -->
+          <button class="btn btn-primary btn-lg mt-3 shadow" data-bs-toggle="modal" data-bs-target="#chatModal" onclick="click()">
+            Conversar Agora
+          </button>
+          <div style="padding-top: 20px; " id="telegram-animation"><img src="img/Imagem do WhatsApp de 2024-11-25 à(s) 23.16.27_980d3756.jpg" width="100px">
+          <button class="btn btn-primary btn-lg mt-3 shadow"><a href="https://t.me/Dra_Cristina_bot" style="list-style: none; text-decoration: none; color: white;">Telegram</a></button></div>
+        </div>
+        <div class="col-md-6">
+          <img src="img/Design sem nome (3).png" alt="Mockup" class="img-fluid rounded" width="400px">
+        </div>
+      </div>  
+    </section>
+
+
+  <!-- Sobre Section -->
+  <section class="bg-light py-5" id="sobre">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5">
+          <video src="img/mockup video.mp4" width="300px" loop autoplay muted class="rounded shadow"></video>
+        </div>
+        <div class="col-md-4">
+          <h2 class="fw-bold text-primary mb-3">O que é a Doutora Cristina?</h2>
+          <p>A Doutora Cristina é uma solução inovadora que disponibiliza suporte médico 24 horas por dia. Ideal para esclarecer dúvidas imediatas, ela fornece respostas rápidas e precisas, garantindo praticidade e eficiência</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefícios Section -->
+  <section class="py-5" id="Benefícios">
+    <div class="container">
+      <h2 class="text-center fw-bold text-primary mb-4">Como a Doutora Cristina pode ajudar você?</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <ul class="list-unstyled">
+            <li class="mb-3"><span class="text-success">✔</span> Atendimento Virtual 24/7: Disponível a qualquer hora.</li>
+            <li class="mb-3"><span class="text-success">✔</span> Responda perguntas frequentes sobre saúde rapidamente.</li>
+            <li class="mb-3"><span class="text-success">✔</span> Fácil no uso, focado experiência do usuário.</li>
+            <li class="mb-3"><span class="text-success">✔</span> Encaminhamento para consultas presenciais.</li>
+          </ul>
+        </div>
+        <div class="col-md-5">
+          <img src="img/girl-with-book.webp" alt="Benefícios" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="feedback" style="background-color: #f9f9f9; padding: 40px;">
+    <div class="container">
+      <h2 class="text-center">Feedback</h2>
+      <div  id="iframe"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSehFZkGkECpyYcOfChdwGuumJbhbuzNhL8apFktPMQYnQLSlQ/viewform?embedded=true" width="720" height="1807" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe></div>
+  </section>
+
+  <!-- Chatbot Messenger -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger
+    chat-icon="https://png.pngtree.com/png-clipart/20230102/original/pngtree-female-doctor-nurse-pointing-with-mask-png-image_8855461.png"
+    chat-title="Doutora Cristina"
+    agent-id="42445dd5-1031-491d-ad8d-60f1947ab572"
+    intent="Welcome"
+    language-code="pt-br">
+  </df-messenger>
+  <script src="script.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</body>
+</html>

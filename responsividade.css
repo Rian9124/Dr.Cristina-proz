@@ -1,0 +1,18 @@
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-section img {
+        max-width: 100%;
+        margin-right: 50%;
+    }
+    .text-sobre {
+        text-align: center;
+    }
+    ul li {
+        font-size: 16px;
+    }
+    video {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}

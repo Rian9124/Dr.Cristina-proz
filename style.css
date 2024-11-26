@@ -1,0 +1,131 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização global */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 30px; /* Espaço para a navbar fixa */
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+.navbar .nav-link {
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.navbar .nav-link:hover {
+    color: #FFD700; /* Efeito hover nos links da navbar */
+}
+
+/* Hero Section */
+h1, h2 {
+    font-weight: 600;
+    color: #007BFF;
+}
+.hero-section {
+    text-align: center;
+    padding: 30px 20px;
+}
+.hero-section img {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.hero-section .btn {
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+.hero-section .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Sobre Section */
+
+.text-sobre h2 {
+    margin-bottom: 20px;
+}
+.text-sobre p {
+    font-size: 18px;
+    color: #555;
+}
+.rounded{
+    margin-left: 20%;
+}
+
+/* Benefícios Section */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+ul li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+ul li span {
+    color: #28a745;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.benefits img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Chatbot */
+/* Personalização principal do chatbot */
+df-messenger {
+    --df-messenger-bot-message: #007BFF; /* Cor das mensagens do bot */
+    --df-messenger-button-titlebar-color: #007BFF; /* Cor do título e botão */
+    --df-messenger-chat-background-color: #f7eeee; /* Fundo do chat */
+    --df-messenger-font-color: #ffffff; /* Cor do texto para melhor contraste */
+    --df-messenger-send-icon: #007BFF; /* Ícone de envio */
+    --df-messenger-user-message: #fff; /* Fundo das mensagens do usuário */
+    --df-messenger-user-message: #479b3d;
+    padding: 40px;
+    position: fixed;
+    right: 60px;
+    transform: translateX(40%) translateY(40%);
+    bottom: 15px; /* Distância da parte inferior da tela */
+    z-index: 9999; /* Coloca o chatbot no topo das camadas visuais */
+}
+
+/* Wrapper do chatbot para garantir o topo */
+df-messenger .df-messenger-wrapper {
+    z-index: 9999; /* Garante que o conteúdo do chatbot também fique no topo */
+}
+
+
+
+/* feedback */
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2.text-center {
+    text-align: center;
+    color: #007BFF;
+    margin-bottom: 20px;
+  }
+  #iframe{
+    display: flex;
+    justify-content: center;
+  }
